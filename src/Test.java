@@ -1,3 +1,5 @@
+import designpattern.singleton.Singleton1;
+
 /**
  * @Author: chenglvpeng
  * @Date: 2018/12/3  14:12
@@ -7,7 +9,10 @@
 public class Test {
     public static void main(String[] args) {
 
-
+        Singleton1 singleton1 = Singleton1.getInstance();
+        Singleton1 singleton2 = Singleton1.getInstance();
+        System.out.println(singleton1);
+        System.out.println(singleton2);
 
     }
 
